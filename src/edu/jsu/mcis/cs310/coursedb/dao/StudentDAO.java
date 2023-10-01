@@ -25,6 +25,7 @@ public class StudentDAO {
             PreparedStatement pstmt = conn.prepareStatement(QUERY_FIND);
             pstmt.setString(1, username);
             
+            
             boolean hasresults = pstmt.execute();
             
             if ( hasresults ) {
